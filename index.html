@@ -9,19 +9,19 @@
 
 		
 
-		<link rel="modulepreload" href="/iver-ctf-2021-countdown/_app/start-7ff61976.js">
-		<link rel="modulepreload" href="/iver-ctf-2021-countdown/_app/chunks/vendor-1bb106e3.js">
-		<link rel="modulepreload" href="/iver-ctf-2021-countdown/_app/pages/__layout.svelte-505f2b24.js">
-		<link rel="modulepreload" href="/iver-ctf-2021-countdown/_app/pages/index.svelte-0ac4d6c6.js">
-		<link rel="stylesheet" href="/iver-ctf-2021-countdown/_app/assets/start-61d1577b.css">
-		<link rel="stylesheet" href="/iver-ctf-2021-countdown/_app/assets/pages/__layout.svelte-2a8df6c6.css">
-		<link rel="stylesheet" href="/iver-ctf-2021-countdown/_app/assets/pages/index.svelte-5b5f9b4c.css">
+		<link rel="modulepreload" href="/_app/start-29b15ebc.js">
+		<link rel="modulepreload" href="/_app/chunks/vendor-1bb106e3.js">
+		<link rel="modulepreload" href="/_app/pages/__layout.svelte-505f2b24.js">
+		<link rel="modulepreload" href="/_app/pages/index.svelte-25b2659a.js">
+		<link rel="stylesheet" href="/_app/assets/start-61d1577b.css">
+		<link rel="stylesheet" href="/_app/assets/pages/__layout.svelte-9aa59439.css">
+		<link rel="stylesheet" href="/_app/assets/pages/index.svelte-8a33668a.css">
 
 		<script type="module">
-			import { start } from "/iver-ctf-2021-countdown/_app/start-7ff61976.js";
+			import { start } from "/_app/start-29b15ebc.js";
 			start({
 				target: document.querySelector("#svelte"),
-				paths: {"base":"/iver-ctf-2021-countdown","assets":""},
+				paths: {"base":"","assets":""},
 				session: {},
 				host: location.host,
 				route: true,
@@ -31,8 +31,8 @@
 					status: 200,
 					error: null,
 					nodes: [
-						import("/iver-ctf-2021-countdown/_app/pages/__layout.svelte-505f2b24.js"),
-						import("/iver-ctf-2021-countdown/_app/pages/index.svelte-0ac4d6c6.js")
+						import("/_app/pages/__layout.svelte-505f2b24.js"),
+						import("/_app/pages/index.svelte-25b2659a.js")
 					],
 					page: {
 						host: location.host, // TODO this is redundant
@@ -57,18 +57,28 @@
 
 <div class="container svelte-n4fgck"><main class="svelte-n4fgck">
 
-<section><pre class="svelte-5bciga"><span class="prompt svelte-5bciga">$</span> <span class="cmd svelte-5bciga">date</span> <span class="arg svelte-5bciga">-I</span> <span class="arg svelte-5bciga">-d <span class="str svelte-5bciga">&quot;<span class="var svelte-5bciga">$DATE_START</span>&quot;</span></span>
-<span class="output svelte-5bciga">2021-12-13</span>
+<section><pre class="svelte-1s042nt"><span class="prompt svelte-1s042nt">$</span> <span class="cmd svelte-1s042nt">./countdown.sh <span class="arg svelte-1s042nt"><span class="str svelte-1s042nt">&quot;<span class="var svelte-1s042nt">$DATE_START</span>&quot;</span></span> <span class="arg svelte-1s042nt"><span class="str svelte-1s042nt">&quot;<span class="var svelte-1s042nt">$DATE_END</span>&quot;</span></span></span>
+<span class="output svelte-1s042nt">SECONDS   MINUTES  HOURS  DAYS
+<span class="output svelte-jetd1d">1155057s  19250m   320h   13d</span></span>
 
-<span class="prompt svelte-5bciga">$</span> <span class="cmd svelte-5bciga">date</span> <span class="arg svelte-5bciga">-I</span> <span class="arg svelte-5bciga">-d <span class="str svelte-5bciga">&quot;<span class="var svelte-5bciga">$DATE_END</span>&quot;</span></span>
-<span class="output svelte-5bciga">2021-12-17</span>
+<span class="output svelte-1s042nt">SECONDS   MINUTES  HOURS  DAYS
+<span class="output svelte-jetd1d">1587057s  26450m   440h   18d</span></span></pre></section>
 
-<span class="prompt svelte-5bciga">$</span> <span class="cmd svelte-5bciga">./countdown.sh <span class="arg svelte-5bciga"><span class="str svelte-5bciga">&quot;<span class="var svelte-5bciga">$DATE_START</span>&quot;</span></span> <span class="arg svelte-5bciga"><span class="str svelte-5bciga">&quot;<span class="var svelte-5bciga">$DATE_END</span>&quot;</span></span></span>
-<span class="output svelte-5bciga">SECONDS   MINUTES  HOURS  DAYS
-<span class="output svelte-jetd1d">1156982s  19283m   321h   13d</span></span>
+<section><pre class="svelte-1s042nt"><span class="prompt svelte-1s042nt">$</span> <span class="cmd svelte-1s042nt">ls</span> <span class="arg svelte-1s042nt">categories</span>
+<span class="output svelte-1s042nt">crypto	  osint  reversing
+forensic  pwn	 web</span>
 
-<span class="output svelte-5bciga">SECONDS   MINUTES  HOURS  DAYS
-<span class="output svelte-jetd1d">1588982s  26483m   441h   18d</span></span></pre>
+<span class="prompt svelte-1s042nt">$</span> <span class="cmd svelte-1s042nt">cat</span> <span class="arg svelte-1s042nt">location.txt</span>
+<span class="output svelte-1s042nt"><a href="https://2021.santahack.xyz" referrerpolicy="noreferrer">https://2021.santahack.xyz</a></span>
+
+<span class="prompt svelte-1s042nt">$</span> <span class="cmd svelte-1s042nt">cat</span> <span class="arg svelte-1s042nt">communication.txt</span>
+<span class="output svelte-1s042nt">TEAMS #2021 - Santa Hack</span>
+
+<span class="prompt svelte-1s042nt">$</span> <span class="cmd svelte-1s042nt">date</span> <span class="arg svelte-1s042nt">-I</span> <span class="arg svelte-1s042nt">-d <span class="str svelte-1s042nt">&quot;<span class="var svelte-1s042nt">$DATE_START</span>&quot;</span></span>
+<span class="output svelte-1s042nt">2021-12-13</span>
+
+<span class="prompt svelte-1s042nt">$</span> <span class="cmd svelte-1s042nt">date</span> <span class="arg svelte-1s042nt">-I</span> <span class="arg svelte-1s042nt">-d <span class="str svelte-1s042nt">&quot;<span class="var svelte-1s042nt">$DATE_END</span>&quot;</span></span>
+<span class="output svelte-1s042nt">2021-12-17</span></pre>
 </section></main></div>
 
 <footer></footer>
