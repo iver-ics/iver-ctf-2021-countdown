@@ -28,14 +28,21 @@
 <samp class="output">crypto	  osint  reversing
 forensic  pwn	 web</samp>
 
-<span class="prompt">$</span> <code><span class="cmd">cat</span> <span class="arg">location.txt</span></code>
-<samp class="output"><a href="https://2021.santahack.xyz" referrerpolicy="noreferrer">https://2021.santahack.xyz</a></samp>
+<span class="prompt">$</span> <code><span class="cmd">cat</span> <span class="arg">location.md</span></code>
+<samp class="output">- Reg: <a href="https://2021.santahack.xyz" referrerpolicy="noreferrer">&lt;https://2021.santahack.xyz&gt;</a>
+- Comms: TEAMS #2021 - Santa Hack
 
-<span class="prompt">$</span> <code><span class="cmd">cat</span> <span class="arg">communication.txt</span></code>
-<samp class="output">TEAMS #2021 - Santa Hack</samp>
+&gt; *Reg opens later, stay tuned!*</samp>
 
-<span class="prompt">$</span> <code><span class="cmd">cat</span> <span class="arg">registration-email.regex</span></code>
-<samp class="output">^.*@iver\.(com|se|no|pl)$</samp>
+<span class="prompt">$</span> <code><span class="cmd">cat</span> <span class="arg">difficulty.txt</span></code>
+<samp class="output">Difficulty: [EASY => MEDIUM]</samp>
+
+<span class="prompt">$</span> <code><span class="cmd">cat</span> <span class="arg">rules.yaml</span></code>
+<samp class="output">teamSize:
+  min: 1
+  max: null
+email:
+  regex: ^.*@iver\.(com|se|no|pl)$</samp>
 
 <span class="prompt">$</span> <code><span class="cmd">date</span> <span class="arg">-I</span> <span class="arg">-d <span class="str">"<span class="var">$DATE_START</span>"</span></span></code>
 <samp class="output">2021-12-13</samp>

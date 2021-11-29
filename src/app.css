@@ -40,3 +40,12 @@ pre {
 	word-wrap: break-word;
 	overflow-x: hidden;
 }
+
+a,
+a:visited {
+	color: #d38225;
+}
+
+a:hover {
+	color: #f8a13e;
+}
