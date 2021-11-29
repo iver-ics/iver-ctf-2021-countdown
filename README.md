@@ -2,6 +2,8 @@
 
 Simple countdown page, powered by [SvelteKit](https://kit.svelte.dev/).
 
+![screenshot](docs/screenshot.png)
+
 ## Developing
 
 Once you've created a project and installed dependencies with `npm install`
