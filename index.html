@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="description" content="Svelte demo app" />
+		<link rel="icon" href="/favicon.png" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>Iver&#39;s Christmas CTF 2021</title>
+
+		
+
+		<link rel="modulepreload" href="/_app/start-16a49769.js">
+		<link rel="modulepreload" href="/_app/chunks/vendor-1bb106e3.js">
+		<link rel="modulepreload" href="/_app/pages/__layout.svelte-505f2b24.js">
+		<link rel="modulepreload" href="/_app/pages/index.svelte-0ac4d6c6.js">
+		<link rel="stylesheet" href="/_app/assets/start-61d1577b.css">
+		<link rel="stylesheet" href="/_app/assets/pages/__layout.svelte-db64400f.css">
+		<link rel="stylesheet" href="/_app/assets/pages/index.svelte-5b5f9b4c.css">
+
+		<script type="module">
+			import { start } from "/_app/start-16a49769.js";
+			start({
+				target: document.querySelector("#svelte"),
+				paths: {"base":"","assets":""},
+				session: {},
+				host: location.host,
+				route: true,
+				spa: false,
+				trailing_slash: "never",
+				hydrate: {
+					status: 200,
+					error: null,
+					nodes: [
+						import("/_app/pages/__layout.svelte-505f2b24.js"),
+						import("/_app/pages/index.svelte-0ac4d6c6.js")
+					],
+					page: {
+						host: location.host, // TODO this is redundant
+						path: "\u002F",
+						query: new URLSearchParams(""),
+						params: {}
+					}
+				}
+			});
+		</script>
+	</head>
+	<body>
+		<div id="svelte">
+
+
+<header class="svelte-5nc5ja"><div class="iver-icon svelte-5nc5ja">
+		
+		<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 347.7 379" style="enable-background:new 0 0 347.7 379;" xml:space="preserve"><title>I_S_Neg_RGB</title><g><polygon class="st0 svelte-5nc5ja" points="0,251.1 0,379 347.7,271.9 347.7,144 	"></polygon><polygon class="st0 svelte-5nc5ja" points="245.5,47.2 150.2,0 150.1,128.3 245.5,175.5 	"></polygon></g></svg></div>
+	<h1>Iver&#39;s Christmas CTF 2021
+	</h1>
+</header>
+
+<div class="container svelte-n4fgck"><main class="svelte-n4fgck">
+
+<section><pre class="svelte-5bciga"><span class="prompt svelte-5bciga">$</span> <span class="cmd svelte-5bciga">date</span> <span class="arg svelte-5bciga">-I</span> <span class="arg svelte-5bciga">-d <span class="str svelte-5bciga">&quot;<span class="var svelte-5bciga">$DATE_START</span>&quot;</span></span>
+<span class="output svelte-5bciga">2021-12-13</span>
+
+<span class="prompt svelte-5bciga">$</span> <span class="cmd svelte-5bciga">date</span> <span class="arg svelte-5bciga">-I</span> <span class="arg svelte-5bciga">-d <span class="str svelte-5bciga">&quot;<span class="var svelte-5bciga">$DATE_END</span>&quot;</span></span>
+<span class="output svelte-5bciga">2021-12-17</span>
+
+<span class="prompt svelte-5bciga">$</span> <span class="cmd svelte-5bciga">./countdown.sh <span class="arg svelte-5bciga"><span class="str svelte-5bciga">&quot;<span class="var svelte-5bciga">$DATE_START</span>&quot;</span></span> <span class="arg svelte-5bciga"><span class="str svelte-5bciga">&quot;<span class="var svelte-5bciga">$DATE_END</span>&quot;</span></span></span>
+<span class="output svelte-5bciga">SECONDS   MINUTES  HOURS  DAYS
+<span class="output svelte-jetd1d">1163489s  19391m   323h   13d</span></span>
+
+<span class="output svelte-5bciga">SECONDS   MINUTES  HOURS  DAYS
+<span class="output svelte-jetd1d">1595489s  26591m   443h   18d</span></span></pre>
+</section></main></div>
+
+<footer></footer>
+
+
+
+			
+		</div>
+	</body>
+</html>
