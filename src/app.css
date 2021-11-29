@@ -1,11 +1,4 @@
-@import '@fontsource/fira-mono';
-@import url('https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap');
-@font-face {
-	font-family: 'Fura Code';
-	font-style: normal;
-	font-weight: 400;
-	src: url(/fonts/Fura\ Code\ Regular\ Nerd\ Font\ Complete.ttf) format('truetype');
-}
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code&family=Syne+Mono&display=swap');
 
 :root {
 	color-scheme: dark;
@@ -16,7 +9,7 @@
 	--muted-color: #D8BFD8;
 	--text-color: #DDA0DD;
 	--primary-font-family: 'Syne Mono', monospace;
-	--secondary-font-family: 'Fura Code', monospace;
+	--secondary-font-family: 'Fira Code', monospace;
 }
 
 html {

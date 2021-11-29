@@ -15,30 +15,33 @@
 
 <section>
 <pre>
-<span class="prompt">$</span> <span class="cmd">./countdown.sh <span class="arg"><span class="str">"<span class="var">$DATE_START</span>"</span></span> <span class="arg"><span class="str">"<span class="var">$DATE_END</span>"</span></span></span>
-<span class="output"><Countdown time={timeStart} passedString="// Let's go! 🎉"/></span>
+<span class="prompt">$</span> <code><span class="cmd">./countdown.sh <span class="arg"><span class="str">"<span class="var">$DATE_START</span>"</span></span> <span class="arg"><span class="str">"<span class="var">$DATE_END</span>"</span></span></span></code>
+<samp class="output"><Countdown time={timeStart} passedString="// Let's go! 🎉"/></samp>
 
-<span class="output"><Countdown time={timeEnd} passedString="// It's over!"/></span>
+<samp class="output"><Countdown time={timeEnd} passedString="// It's over!"/></samp>
 </pre>
 </section>
 
 <section>
 <pre>
-<span class="prompt">$</span> <span class="cmd">ls</span> <span class="arg">categories</span>
-<span class="output">crypto	  osint  reversing
-forensic  pwn	 web</span>
+<span class="prompt">$</span> <code><span class="cmd">ls</span> <span class="arg">categories</span></code>
+<samp class="output">crypto	  osint  reversing
+forensic  pwn	 web</samp>
 
-<span class="prompt">$</span> <span class="cmd">cat</span> <span class="arg">location.txt</span>
-<span class="output"><a href="https://2021.santahack.xyz" referrerpolicy="noreferrer">https://2021.santahack.xyz</a></span>
+<span class="prompt">$</span> <code><span class="cmd">cat</span> <span class="arg">location.txt</span></code>
+<samp class="output"><a href="https://2021.santahack.xyz" referrerpolicy="noreferrer">https://2021.santahack.xyz</a></samp>
 
-<span class="prompt">$</span> <span class="cmd">cat</span> <span class="arg">communication.txt</span>
-<span class="output">TEAMS #2021 - Santa Hack</span>
+<span class="prompt">$</span> <code><span class="cmd">cat</span> <span class="arg">communication.txt</span></code>
+<samp class="output">TEAMS #2021 - Santa Hack</samp>
 
-<span class="prompt">$</span> <span class="cmd">date</span> <span class="arg">-I</span> <span class="arg">-d <span class="str">"<span class="var">$DATE_START</span>"</span></span>
-<span class="output">2021-12-13</span>
+<span class="prompt">$</span> <code><span class="cmd">cat</span> <span class="arg">registration-email.regex</span></code>
+<samp class="output">^.*@iver\.(com|se|no|pl)$</samp>
 
-<span class="prompt">$</span> <span class="cmd">date</span> <span class="arg">-I</span> <span class="arg">-d <span class="str">"<span class="var">$DATE_END</span>"</span></span>
-<span class="output">2021-12-17</span>
+<span class="prompt">$</span> <code><span class="cmd">date</span> <span class="arg">-I</span> <span class="arg">-d <span class="str">"<span class="var">$DATE_START</span>"</span></span></code>
+<samp class="output">2021-12-13</samp>
+
+<span class="prompt">$</span> <code><span class="cmd">date</span> <span class="arg">-I</span> <span class="arg">-d <span class="str">"<span class="var">$DATE_END</span>"</span></span></code>
+<samp class="output">2021-12-17</samp>
 </pre>
 </section>
 
