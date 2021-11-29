@@ -9,16 +9,16 @@
 
 		
 
-		<link rel="modulepreload" href="/_app/start-09f062a8.js">
+		<link rel="modulepreload" href="/_app/start-029239a3.js">
 		<link rel="modulepreload" href="/_app/chunks/vendor-19970ed8.js">
-		<link rel="modulepreload" href="/_app/pages/__layout.svelte-7388b364.js">
-		<link rel="modulepreload" href="/_app/pages/index.svelte-94082ec3.js">
+		<link rel="modulepreload" href="/_app/pages/__layout.svelte-3c3558d5.js">
+		<link rel="modulepreload" href="/_app/pages/index.svelte-d6ee69eb.js">
 		<link rel="stylesheet" href="/_app/assets/start-61d1577b.css">
-		<link rel="stylesheet" href="/_app/assets/pages/__layout.svelte-19f3dec6.css">
+		<link rel="stylesheet" href="/_app/assets/pages/__layout.svelte-2bb96f52.css">
 		<link rel="stylesheet" href="/_app/assets/pages/index.svelte-8a33668a.css">
 
 		<script type="module">
-			import { start } from "/_app/start-09f062a8.js";
+			import { start } from "/_app/start-029239a3.js";
 			start({
 				target: document.querySelector("#svelte"),
 				paths: {"base":"","assets":""},
@@ -31,8 +31,8 @@
 					status: 200,
 					error: null,
 					nodes: [
-						import("/_app/pages/__layout.svelte-7388b364.js"),
-						import("/_app/pages/index.svelte-94082ec3.js")
+						import("/_app/pages/__layout.svelte-3c3558d5.js"),
+						import("/_app/pages/index.svelte-d6ee69eb.js")
 					],
 					page: {
 						host: location.host, // TODO this is redundant
@@ -55,33 +55,40 @@
 	</h1>
 </header>
 
-<div class="container svelte-qmyq0h"><main class="svelte-qmyq0h">
+<div class="container svelte-175zqgf"><main class="svelte-175zqgf">
 
-<section><pre class="svelte-1s042nt"><span class="prompt svelte-1s042nt">$</span> <span class="cmd svelte-1s042nt">./countdown.sh <span class="arg svelte-1s042nt"><span class="str svelte-1s042nt">&quot;<span class="var svelte-1s042nt">$DATE_START</span>&quot;</span></span> <span class="arg svelte-1s042nt"><span class="str svelte-1s042nt">&quot;<span class="var svelte-1s042nt">$DATE_END</span>&quot;</span></span></span>
-<span class="output svelte-1s042nt">SECONDS   MINUTES  HOURS  DAYS
-<span class="output svelte-jetd1d">1153809s  19230m   320h   13d</span></span>
+<section><pre class="svelte-1s042nt"><span class="prompt svelte-1s042nt">$</span> <code><span class="cmd svelte-1s042nt">./countdown.sh <span class="arg svelte-1s042nt"><span class="str svelte-1s042nt">&quot;<span class="var svelte-1s042nt">$DATE_START</span>&quot;</span></span> <span class="arg svelte-1s042nt"><span class="str svelte-1s042nt">&quot;<span class="var svelte-1s042nt">$DATE_END</span>&quot;</span></span></span></code>
+<samp class="output svelte-1s042nt">SECONDS   MINUTES  HOURS  DAYS
+<span class="output svelte-jetd1d">1150442s  19174m   319h   13d</span></samp>
 
-<span class="output svelte-1s042nt">SECONDS   MINUTES  HOURS  DAYS
-<span class="output svelte-jetd1d">1585809s  26430m   440h   18d</span></span></pre></section>
+<samp class="output svelte-1s042nt">SECONDS   MINUTES  HOURS  DAYS
+<span class="output svelte-jetd1d">1582442s  26374m   439h   18d</span></samp></pre></section>
 
-<section><pre class="svelte-1s042nt"><span class="prompt svelte-1s042nt">$</span> <span class="cmd svelte-1s042nt">ls</span> <span class="arg svelte-1s042nt">categories</span>
-<span class="output svelte-1s042nt">crypto	  osint  reversing
-forensic  pwn	 web</span>
+<section><pre class="svelte-1s042nt"><span class="prompt svelte-1s042nt">$</span> <code><span class="cmd svelte-1s042nt">ls</span> <span class="arg svelte-1s042nt">categories</span></code>
+<samp class="output svelte-1s042nt">crypto	  osint  reversing
+forensic  pwn	 web</samp>
 
-<span class="prompt svelte-1s042nt">$</span> <span class="cmd svelte-1s042nt">cat</span> <span class="arg svelte-1s042nt">location.txt</span>
-<span class="output svelte-1s042nt"><a href="https://2021.santahack.xyz" referrerpolicy="noreferrer">https://2021.santahack.xyz</a></span>
+<span class="prompt svelte-1s042nt">$</span> <code><span class="cmd svelte-1s042nt">cat</span> <span class="arg svelte-1s042nt">location.txt</span></code>
+<samp class="output svelte-1s042nt"><a href="https://2021.santahack.xyz" referrerpolicy="noreferrer">https://2021.santahack.xyz</a></samp>
 
-<span class="prompt svelte-1s042nt">$</span> <span class="cmd svelte-1s042nt">cat</span> <span class="arg svelte-1s042nt">communication.txt</span>
-<span class="output svelte-1s042nt">TEAMS #2021 - Santa Hack</span>
+<span class="prompt svelte-1s042nt">$</span> <code><span class="cmd svelte-1s042nt">cat</span> <span class="arg svelte-1s042nt">communication.txt</span></code>
+<samp class="output svelte-1s042nt">TEAMS #2021 - Santa Hack</samp>
 
-<span class="prompt svelte-1s042nt">$</span> <span class="cmd svelte-1s042nt">date</span> <span class="arg svelte-1s042nt">-I</span> <span class="arg svelte-1s042nt">-d <span class="str svelte-1s042nt">&quot;<span class="var svelte-1s042nt">$DATE_START</span>&quot;</span></span>
-<span class="output svelte-1s042nt">2021-12-13</span>
+<span class="prompt svelte-1s042nt">$</span> <code><span class="cmd svelte-1s042nt">cat</span> <span class="arg svelte-1s042nt">registration-email.regex</span></code>
+<samp class="output svelte-1s042nt">^.*@iver\.(com|se|no|pl)$</samp>
 
-<span class="prompt svelte-1s042nt">$</span> <span class="cmd svelte-1s042nt">date</span> <span class="arg svelte-1s042nt">-I</span> <span class="arg svelte-1s042nt">-d <span class="str svelte-1s042nt">&quot;<span class="var svelte-1s042nt">$DATE_END</span>&quot;</span></span>
-<span class="output svelte-1s042nt">2021-12-17</span></pre>
+<span class="prompt svelte-1s042nt">$</span> <code><span class="cmd svelte-1s042nt">date</span> <span class="arg svelte-1s042nt">-I</span> <span class="arg svelte-1s042nt">-d <span class="str svelte-1s042nt">&quot;<span class="var svelte-1s042nt">$DATE_START</span>&quot;</span></span></code>
+<samp class="output svelte-1s042nt">2021-12-13</samp>
+
+<span class="prompt svelte-1s042nt">$</span> <code><span class="cmd svelte-1s042nt">date</span> <span class="arg svelte-1s042nt">-I</span> <span class="arg svelte-1s042nt">-d <span class="str svelte-1s042nt">&quot;<span class="var svelte-1s042nt">$DATE_END</span>&quot;</span></span></code>
+<samp class="output svelte-1s042nt">2021-12-17</samp></pre>
 </section></main></div>
 
-<div class="snow svelte-qmyq0h"><video autoplay muted loop class="svelte-qmyq0h"><source src="/videos/Seamless+Snow+Background+Loop-CiXWHUpoD44.mp4"></video>
+<footer class="svelte-175zqgf"><span class="muted svelte-175zqgf">&quot;Seamless Snow Background Loop&quot; by Kaweh Bassiri - <a target="_blank" referrerpolicy="no-referrer" href="https://youtube.com/watch?v=CiXWHUpoD44">youtube.com</a><br>
+		&quot;Syne Mono&quot; font by The Syne Project Authors - <a target="_blank" referrerpolicy="no-referrer" href="https://gitlab.com/bonjour-monde/fonderie/syne-typeface/-/blob/15ae4cb0e07c24d0ff26865a8a86fd918c41e618/OFL.txt">gitlab.com</a><br>
+		&quot;Fira Code&quot; font by The Fira Code Project Authors - <a target="_blank" referrerpolicy="no-referrer" href="https://github.com/tonsky/FiraCode/blob/5811062ef62d3700a863950f0b341f76151e0c50/LICENSE">github.com</a></span></footer>
+
+<div class="snow svelte-175zqgf"><video autoplay muted loop class="svelte-175zqgf"><source src="/videos/Seamless+Snow+Background+Loop-CiXWHUpoD44.mp4"></video>
 </div>
 
 
