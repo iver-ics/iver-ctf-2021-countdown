@@ -10,7 +10,7 @@
 </script>
 
 <svelte:head>
-	<title>Home</title>
+	<title>Iver's Christmas CTF 2021</title>
 </svelte:head>
 
 <section>
