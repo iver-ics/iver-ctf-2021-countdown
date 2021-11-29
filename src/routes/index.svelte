@@ -15,16 +15,30 @@
 
 <section>
 <pre>
+<span class="prompt">$</span> <span class="cmd">./countdown.sh <span class="arg"><span class="str">"<span class="var">$DATE_START</span>"</span></span> <span class="arg"><span class="str">"<span class="var">$DATE_END</span>"</span></span></span>
+<span class="output"><Countdown time={timeStart} passedString="// Let's go! 🎉"/></span>
+
+<span class="output"><Countdown time={timeEnd} passedString="// It's over!"/></span>
+</pre>
+</section>
+
+<section>
+<pre>
+<span class="prompt">$</span> <span class="cmd">ls</span> <span class="arg">categories</span>
+<span class="output">crypto	  osint  reversing
+forensic  pwn	 web</span>
+
+<span class="prompt">$</span> <span class="cmd">cat</span> <span class="arg">location.txt</span>
+<span class="output"><a href="https://2021.santahack.xyz" referrerpolicy="noreferrer">https://2021.santahack.xyz</a></span>
+
+<span class="prompt">$</span> <span class="cmd">cat</span> <span class="arg">communication.txt</span>
+<span class="output">TEAMS #2021 - Santa Hack</span>
+
 <span class="prompt">$</span> <span class="cmd">date</span> <span class="arg">-I</span> <span class="arg">-d <span class="str">"<span class="var">$DATE_START</span>"</span></span>
 <span class="output">2021-12-13</span>
 
 <span class="prompt">$</span> <span class="cmd">date</span> <span class="arg">-I</span> <span class="arg">-d <span class="str">"<span class="var">$DATE_END</span>"</span></span>
 <span class="output">2021-12-17</span>
-
-<span class="prompt">$</span> <span class="cmd">./countdown.sh <span class="arg"><span class="str">"<span class="var">$DATE_START</span>"</span></span> <span class="arg"><span class="str">"<span class="var">$DATE_END</span>"</span></span></span>
-<span class="output"><Countdown time={timeStart} passedString="// Let's go! 🎉"/></span>
-
-<span class="output"><Countdown time={timeEnd} passedString="// It's over!"/></span>
 </pre>
 </section>
 
@@ -36,7 +50,7 @@
 		color: #DA2C43;
 	}
 	.cmd {
-		color: #DDA0DD;
+		color: #17B169;
 	}
 	.arg {
 		color: #DDA0DD;
