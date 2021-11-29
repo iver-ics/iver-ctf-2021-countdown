@@ -3,11 +3,11 @@
 :root {
 	color-scheme: dark;
 
-	--primary-color: #E6E6FA;
-	--secondary-color: #33006F;
+	--primary-color: #e6e6fa;
+	--secondary-color: #33006f;
 	--third-color: #1d1160;
-	--muted-color: #D8BFD8;
-	--text-color: #DDA0DD;
+	--muted-color: #d8bfd8;
+	--text-color: #dda0dd;
 	--primary-font-family: 'Syne Mono', monospace;
 	--secondary-font-family: 'Fira Code', monospace;
 }
@@ -21,7 +21,9 @@ body {
 	margin: 0;
 }
 
-pre, samp, code {
+pre,
+samp,
+code {
 	font-family: var(--secondary-font-family);
 }
 
@@ -29,11 +31,7 @@ pre {
 	margin: 0 0 1rem 0;
 	padding: 1rem;
 	background-color: var(--secondary-color);
-	background: linear-gradient(
-		65deg,
-		var(--secondary-color) 0%,
-		var(--third-color) 100%
-	);
+	background: linear-gradient(65deg, var(--secondary-color) 0%, var(--third-color) 100%);
 	border-radius: 0.5rem;
 	border-top: 0.5rem solid #452c63;
 	white-space: pre-wrap;

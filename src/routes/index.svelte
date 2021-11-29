@@ -3,7 +3,7 @@
 </script>
 
 <script lang="ts">
-	import Countdown from "$lib/countdown/Countdown.svelte";
+	import Countdown from '$lib/countdown/Countdown.svelte';
 
 	const timeStart = new Date('2021-12-13');
 	const timeEnd = new Date('2021-12-18');
@@ -14,7 +14,8 @@
 </svelte:head>
 
 <section>
-<pre class="x-large">
+	<pre
+		class="x-large">
 <span class="prompt">$</span> <code><span class="cmd">./countdown.sh <span class="arg"><span class="str">"<span class="var">$DATE_START</span>"</span></span> <span class="arg"><span class="str">"<span class="var">$DATE_END</span>"</span></span></span></code>
 <samp class="output"><Countdown time={timeStart} passedString="// Let's go! 🎉"/></samp>
 
@@ -23,7 +24,8 @@
 </section>
 
 <section>
-<pre class="larger">
+	<pre
+		class="larger">
 <span class="prompt">$</span> <code><span class="cmd">ls</span> <span class="arg">categories</span></code>
 <samp class="output">crypto	  osint  reversing
 forensic  pwn	 web</samp>
@@ -60,13 +62,13 @@ email:
 		font-size: x-large;
 	}
 	.prompt {
-		color: #DA2C43;
+		color: #da2c43;
 	}
 	.cmd {
-		color: #17B169;
+		color: #17b169;
 	}
 	.arg {
-		color: #DDA0DD;
+		color: #dda0dd;
 	}
 	.str {
 		color: #568203;
@@ -75,6 +77,6 @@ email:
 		color: #9b41e0;
 	}
 	.output {
-		color: #D8BFD8
+		color: #d8bfd8;
 	}
 </style>
