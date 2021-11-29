@@ -1,14 +1,22 @@
 <script lang="ts">
     import { onDestroy } from "svelte";
 
+    export let passedString: string = "// Timeout!";
     export let time: Date;
     export let intervalMs: number = 1000;
 
     let output: string;
     let intervalHandle = setInterval(updateOutput, intervalMs);
+    let hasPassed = false;
 
     function updateOutput(): void {
         const deltaMs = time.getTime() - new Date().getTime();
+        if (deltaMs < 0) {
+            output = "0s        0m       0h     0d  ";
+            hasPassed = true;
+            clearInterval(intervalHandle);
+            return;
+        }
         const deltaS = Math.floor(deltaMs/1000) + "s";
         const deltaM = Math.floor(deltaMs/1000/60) + "m";
         const deltaH = Math.floor(deltaMs/1000/60/60) + "h";
@@ -23,4 +31,13 @@
 </script>
 
 SECONDS   MINUTES  HOURS  DAYS
-{output}
+<span class="output">{output}</span>{#if hasPassed}<span class="passed">{passedString}</span>{/if}
+
+<style>
+    .output {
+        color: var(--text-color);
+    }
+    .passed {
+        color: var(--primary-color);
+    }
+</style>

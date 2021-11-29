@@ -22,9 +22,9 @@
 <span class="output">2021-12-17</span>
 
 <span class="prompt">$</span> <span class="cmd">./countdown.sh <span class="arg"><span class="str">"<span class="var">$DATE_START</span>"</span></span> <span class="arg"><span class="str">"<span class="var">$DATE_END</span>"</span></span></span>
-<span class="output"><Countdown time={timeStart}/></span>
+<span class="output"><Countdown time={timeStart} passedString="// Let's go! 🎉"/></span>
 
-<span class="output"><Countdown time={timeEnd}/></span>
+<span class="output"><Countdown time={timeEnd} passedString="// It's over!"/></span>
 </pre>
 </section>
 
