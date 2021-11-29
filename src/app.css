@@ -4,7 +4,7 @@
 	font-family: 'Fura Code';
 	font-style: normal;
 	font-weight: 400;
-	src: url(/static/fonts/Fura\ Code\ Regular\ Nerd\ Font\ Complete.ttf) format('truetype');
+	src: url(/fonts/Fura\ Code\ Regular\ Nerd\ Font\ Complete.ttf) format('truetype');
 }
 
 :root {
