@@ -42,7 +42,7 @@ forensic  pwn	 web</samp>
   min: 1
   max: null
 email:
-  regex: ^.*@iver\.(com|se|no|pl)$</samp>
+  regex: ^.*(@iver\.(com|se|no|pl)|@aztek\.no|@nogui\.se)$</samp>
 
 <span class="prompt">$</span> <code><span class="cmd">date</span> <span class="arg">-I</span> <span class="arg">-d <span class="str">"<span class="var">$DATE_START</span>"</span></span></code>
 <samp class="output">2021-12-13</samp>
