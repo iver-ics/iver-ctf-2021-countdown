@@ -1,107 +1,51 @@
 @import '@fontsource/fira-mono';
+@import url('https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap');
+@font-face {
+	font-family: 'Fura Code';
+	font-style: normal;
+	font-weight: 400;
+	src: url(/static/fonts/Fura\ Code\ Regular\ Nerd\ Font\ Complete.ttf) format('truetype');
+}
 
 :root {
-	font-family: Arial, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu,
-		Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-	--font-mono: 'Fira Mono', monospace;
-	--pure-white: #ffffff;
-	--primary-color: #b9c6d2;
-	--secondary-color: #d0dde9;
-	--tertiary-color: #edf0f8;
-	--accent-color: #ff3e00;
-	--heading-color: rgba(0, 0, 0, 0.7);
-	--text-color: #444444;
-	--background-without-opacity: rgba(255, 255, 255, 0.7);
-	--column-width: 42rem;
-	--column-margin-top: 4rem;
+	color-scheme: dark;
+
+	--primary-color: #E6E6FA;
+	--secondary-color: #33006F;
+	--third-color: #1d1160;
+	--muted-color: #D8BFD8;
+	--text-color: #DDA0DD;
+	--primary-font-family: 'Syne Mono', monospace;
+	--secondary-font-family: 'Fura Code', monospace;
+}
+
+html {
+	font-family: var(--primary-font-family);
 }
 
 body {
 	min-height: 100vh;
 	margin: 0;
-	background-color: var(--primary-color);
+	background-color: #160030;
 	background: linear-gradient(
-		180deg,
-		var(--primary-color) 0%,
-		var(--secondary-color) 10.45%,
-		var(--tertiary-color) 41.35%
+		65deg,
+		#160030 0%,
+		#2c1141 100%
 	);
 }
 
-body::before {
-	content: '';
-	width: 80vw;
-	height: 100vh;
-	position: absolute;
-	top: 0;
-	left: 10vw;
-	z-index: -1;
-	background: radial-gradient(
-		50% 50% at 50% 50%,
-		var(--pure-white) 0%,
-		rgba(255, 255, 255, 0) 100%
-	);
-	opacity: 0.05;
-}
-
-#svelte {
-	min-height: 100vh;
-	display: flex;
-	flex-direction: column;
-}
-
-h1,
-h2,
-p {
-	font-weight: 400;
-	color: var(--heading-color);
-}
-
-p {
-	line-height: 1.5;
-}
-
-a {
-	color: var(--accent-color);
-	text-decoration: none;
-}
-
-a:hover {
-	text-decoration: underline;
-}
-
-h1 {
-	font-size: 2rem;
-	text-align: center;
-}
-
-h2 {
-	font-size: 1rem;
+pre, samp, code {
+	font-family: var(--secondary-font-family);
 }
 
 pre {
-	font-size: 16px;
-	font-family: var(--font-mono);
-	background-color: rgba(255, 255, 255, 0.45);
-	border-radius: 3px;
-	box-shadow: 2px 2px 6px rgb(255 255 255 / 25%);
-	padding: 0.5em;
-	overflow-x: auto;
-	color: var(--text-color);
-}
-
-input,
-button {
-	font-size: inherit;
-	font-family: inherit;
-}
-
-button:focus:not(:focus-visible) {
-	outline: none;
-}
-
-@media (min-width: 720px) {
-	h1 {
-		font-size: 2.4rem;
-	}
+	padding: 0.5rem;
+	background-color: var(--secondary-color);
+	background: linear-gradient(
+		65deg,
+		var(--secondary-color) 0%,
+		var(--third-color) 100%
+	);
+	border-radius: 0.5rem;
+	border-top: 0.5rem solid #452c63;
 }

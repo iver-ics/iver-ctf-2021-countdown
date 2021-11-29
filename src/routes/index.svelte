@@ -3,7 +3,10 @@
 </script>
 
 <script lang="ts">
-	import Counter from '$lib/Counter.svelte';
+	import Countdown from "$lib/countdown/Countdown.svelte";
+
+	const timeStart = new Date('2021-12-13');
+	const timeEnd = new Date('2021-12-18');
 </script>
 
 <svelte:head>
@@ -11,49 +14,40 @@
 </svelte:head>
 
 <section>
-	<h1>
-		<div class="welcome">
-			<picture>
-				<source srcset="svelte-welcome.webp" type="image/webp" />
-				<img src="svelte-welcome.png" alt="Welcome" />
-			</picture>
-		</div>
+<pre>
+<span class="prompt">$</span> <span class="cmd">date</span> <span class="arg">-I</span> <span class="arg">-d <span class="str">"<span class="var">$DATE_START</span>"</span></span>
+<span class="output">2021-12-13</span>
 
-		to your new<br />SvelteKit app
-	</h1>
+<span class="prompt">$</span> <span class="cmd">date</span> <span class="arg">-I</span> <span class="arg">-d <span class="str">"<span class="var">$DATE_END</span>"</span></span>
+<span class="output">2021-12-17</span>
 
-	<h2>
-		try editing <strong>src/routes/index.svelte</strong>
-	</h2>
+<span class="prompt">$</span> <span class="cmd">./countdown.sh <span class="arg"><span class="str">"<span class="var">$DATE_START</span>"</span></span> <span class="arg"><span class="str">"<span class="var">$DATE_END</span>"</span></span></span>
+<span class="output"><Countdown time={timeStart}/></span>
 
-	<Counter />
+<span class="output"><Countdown time={timeEnd}/></span>
+</pre>
 </section>
 
 <style>
-	section {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-		flex: 1;
+	pre {
+		font-size: x-large;
 	}
-
-	h1 {
-		width: 100%;
+	.prompt {
+		color: #DA2C43;
 	}
-
-	.welcome {
-		position: relative;
-		width: 100%;
-		height: 0;
-		padding: 0 0 calc(100% * 495 / 2048) 0;
+	.cmd {
+		color: #DDA0DD;
 	}
-
-	.welcome img {
-		position: absolute;
-		width: 100%;
-		height: 100%;
-		top: 0;
-		display: block;
+	.arg {
+		color: #DDA0DD;
+	}
+	.str {
+		color: #568203;
+	}
+	.var {
+		color: #9b41e0;
+	}
+	.output {
+		color: #D8BFD8
 	}
 </style>
