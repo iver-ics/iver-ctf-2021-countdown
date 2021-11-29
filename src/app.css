@@ -26,12 +26,6 @@ html {
 body {
 	min-height: 100vh;
 	margin: 0;
-	background-color: #160030;
-	background: linear-gradient(
-		65deg,
-		#160030 0%,
-		#2c1141 100%
-	);
 }
 
 pre, samp, code {
