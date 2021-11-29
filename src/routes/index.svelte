@@ -14,7 +14,7 @@
 </svelte:head>
 
 <section>
-<pre>
+<pre class="x-large">
 <span class="prompt">$</span> <code><span class="cmd">./countdown.sh <span class="arg"><span class="str">"<span class="var">$DATE_START</span>"</span></span> <span class="arg"><span class="str">"<span class="var">$DATE_END</span>"</span></span></span></code>
 <samp class="output"><Countdown time={timeStart} passedString="// Let's go! 🎉"/></samp>
 
@@ -23,7 +23,7 @@
 </section>
 
 <section>
-<pre>
+<pre class="larger">
 <span class="prompt">$</span> <code><span class="cmd">ls</span> <span class="arg">categories</span></code>
 <samp class="output">crypto	  osint  reversing
 forensic  pwn	 web</samp>
@@ -53,7 +53,10 @@ email:
 </section>
 
 <style>
-	pre {
+	.larger {
+		font-size: larger;
+	}
+	.x-large {
 		font-size: x-large;
 	}
 	.prompt {
