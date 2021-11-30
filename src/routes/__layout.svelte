@@ -52,7 +52,7 @@
 <style>
 	.container {
 		margin: 0 auto;
-		max-width: 50rem;
+		max-width: 60rem;
 	}
 
 	main {
