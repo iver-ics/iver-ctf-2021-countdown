@@ -1,5 +1,7 @@
 # Iver's 2021 CTF challenge countdown page
 
+> :warning: This page is no longer in use, and has therefore been archived.
+
 Simple countdown page, powered by [SvelteKit](https://kit.svelte.dev/).
 
 ![screenshot](docs/screenshot.png)
